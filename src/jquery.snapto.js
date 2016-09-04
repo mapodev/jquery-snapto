@@ -1,4 +1,3 @@
-;
 (function($) {
 	var getSmallestPair = function getSmallestPair(arr) {
 			var min1 = {
@@ -39,12 +38,12 @@
 			return {
 				min1: min1,
 				min2: min2
-			}
+			};
 		},
 		checkTie = function checkTie(arr, tie) {
 			var result = false;
-			if (Object.keys(arr).length == 2 && arr.min1.diff == arr.min2.diff) {
-				if (tie === 'up') {
+			if (Object.keys(arr).length === 2 && arr.min1.diff === arr.min2.diff) {
+				if (tie === "up") {
 					result = arr.min1.val > arr.min2.val ? arr.min1.val : arr.min2.val;
 				} else {
 					result = arr.min1.val < arr.min2.val ? arr.min1.val : arr.min2.val;
@@ -101,7 +100,7 @@
 	$.fn.snapTo = function(value, options) {
 		var settings = $.extend({
 				limit: 10,
-				tie: 'up'
+				tie: "up"
 			}, options),
 			self = this,
 			result = [];
@@ -117,12 +116,12 @@
 			self = this[0];
 		}
 
-		if(typeof self == "object" && self.length > 1) {
+		if(typeof self === "object" && self.length > 1) {
 			self = self.toArray();
 		}
 
 		// also convert array to number for value target
-		if (typeof value.length !== 'undefined' &&
+		if (typeof value.length !== "undefined" &&
 			value.length === 1) {
 			value = value[0];
 		}
