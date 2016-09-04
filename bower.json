@@ -1,0 +1,25 @@
+{
+  "name": "jquery-snapto",
+  "license": "MIT",
+  "authors": [
+    "Marcin Poholski <marcin.poholski@gmail.com>"
+  ],
+  "description": "A jump-start for jQuery plugins development.",
+  "homepage": "http://jquerysnapto.com",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "snapto",
+    "jquery-plugin",
+    "jquery-snapto"
+  ],
+  "main": "src/jquery.snapto.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}

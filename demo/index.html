@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery SnapTo Test</title>
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../src/jquery.snapto.js"></script>
+</head>
+<body>
+	<script>
+		$( function() {
+			console.log("Array to Array", $([5,16,32,9]).snapTo([10,20,30]));
+			console.log("Number to Number", $(5).snapTo(10));
+			console.log("Number to Array", $(5).snapTo([10,20,30]));
+			console.log("Array to Number", $([5,16,32]).snapTo(12));
+			console.log("Selector to Array", $("body").snapTo([10,20,30]));
+		} );
+	</script>
+</body>
+</html>
