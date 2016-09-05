@@ -17,6 +17,7 @@ $(9).snapTo(10); // will return 10
 ### Limit
 
 Limit defines the limit to which it snaps to. If it is outside the limit interval, it won't snap.
+Default limit value is `10`.
 
 ```
 $([4,11,32,6]).snapTo([5,10,20], { limit: 50 }); // will return [5,10,20,5], but
